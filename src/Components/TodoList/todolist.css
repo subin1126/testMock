@@ -1,0 +1,89 @@
+.formList {
+    background-color: #ffffff;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formList input {
+    flex: 1;
+    border: none;
+    color: #000000;
+    padding: 6px 12px;
+}
+
+.formList button[type="submit"] {
+    border: none;
+    border-radius: 16px;
+    background-color: #3ab6bc;
+    cursor: pointer;
+    padding: 8px 16px;
+    color: #ffffff;
+}
+
+
+
+.todoList {
+    display: block;
+    position: relative;
+    min-height: 120px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.todoList ol {
+    margin: 0;
+    padding-left: 2em;
+}
+
+.todoList ol li {
+    clear: both;
+    margin-bottom: 8px;
+}
+
+.todoList ol li span {
+    float: left;
+    font-size: 16px;
+    position: relative;
+}
+
+.todoList ol li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: width 0.2s ease-in-out;
+    width: 0%;
+    height: 3px;
+    background-color: #524fa1;
+}
+
+.todoList ol li.completed span::after {
+    width: 100%;
+}
+
+.todoList ol li button {
+    float: right;
+    margin-left: 4px;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    background-color: #524fa1;
+    padding: 4px 8px;
+}
+
+.todoList ol li button.remove {
+    background-color: #fa466a;
+}
+
+.limit {
+    padding: 8px 16px;
+    border: 1px solid #FA466A;
+    background-color: #feecf0;
+    color: #FA466A;
+    margin-bottom: 16px;
+}
